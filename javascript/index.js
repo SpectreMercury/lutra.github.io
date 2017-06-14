@@ -64,7 +64,7 @@ var _method = {
     var i = 0;
     var fakeSentence = '';
     var sentenceLen = secondText.length;
-    $('.media-container').html('<audio src="media/aixia.mp3"></audio>');
+    $('.media-container').html('<audio autoplay src="media/aixia.mp3"></audio>');
     var fakeType = setInterval(function () {
       if (i >= sentenceLen) {
         _method._processShowNextBtn();
