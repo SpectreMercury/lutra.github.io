@@ -64,7 +64,7 @@ var _method = {
     var i = 0;
     var fakeSentence = '';
     var sentenceLen = secondText.length;
-    $('.media-container').html('<audio autoplay src="media/aixia.mp3"></audio>');
+    $('.media-container').html('<audio src="media/aixia.mp3"></audio>');
     var fakeType = setInterval(function () {
       if (i >= sentenceLen) {
         _method._processShowNextBtn();
@@ -154,11 +154,17 @@ var _method = {
     setTimeout(function() {
       $('.marry-me-final').fadeIn(1222);
       $('.pink-mask').removeClass('active');
+        triangulate();
+        makeBoxes();
+        makeFragments();
     }, 48000);
+    setTimeout(function() {
+      $('.marry-me-first-line').fadeIn(1222);
+    }, 55000);
   }
 
 }
 
 var _helper = {}
 
-init()
+init();
